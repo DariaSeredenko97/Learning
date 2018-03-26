@@ -1,13 +1,15 @@
-package com.alittleproject.learning.model;
+package com.alittleproject.learning.model.buildings.house;
+
+import com.alittleproject.learning.model.buildings.base.Storey;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class Floor implements Storey{
+public class Floor implements Storey<Apartment> {
 
-    private final List<Quarters> apartments;
+    private final List<Apartment> apartments;
 
-    public Floor(final List<Quarters> apartments) {
+    public Floor(final List<Apartment> apartments) {
         this.apartments = apartments;
     }
 
@@ -27,16 +29,16 @@ public class Floor implements Storey{
         return apartments.size();
     }
 
-    public void addQuarters(Quarters quarters) {
-        apartments.add(quarters);
+    public void addApartment(Apartment apartment) {
+        apartments.add(apartment);
     }
 
     public void removeQuarters(int number) {
         apartments.remove(number);
     }
 
-    public void removeQuarters(Quarters quarters) {
-        apartments.remove(quarters);
+    public void removeQuarters(Apartment apartment) {
+        apartments.remove(apartment);
     }
 
     public int counterRepair() {

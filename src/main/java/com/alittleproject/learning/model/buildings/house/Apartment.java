@@ -1,6 +1,8 @@
-package com.alittleproject.learning.model;
+package com.alittleproject.learning.model.buildings.house;
 
-public class Apartment implements Quarters{
+import com.alittleproject.learning.model.buildings.base.Quarters;
+
+public class Apartment implements Quarters {
 
     private static final int DEFAULT_COUNT_ROOM = 2;
 

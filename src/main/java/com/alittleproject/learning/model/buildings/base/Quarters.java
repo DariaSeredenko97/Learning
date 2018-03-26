@@ -1,4 +1,4 @@
-package com.alittleproject.learning.model;
+package com.alittleproject.learning.model.buildings.base;
 
 public interface Quarters {
 

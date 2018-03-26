@@ -1,17 +1,20 @@
-package com.alittleproject.learning.model;
+package com.alittleproject.learning.model.buildings.house;
 
+import com.alittleproject.learning.model.buildings.base.Building;
+
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Building {
+public class House implements Building<Floor>{
 
     public final  List<Floor> floors;
 
-    public Building(List<Floor> floors){
+    public House(List<Floor> floors){
         this.floors = floors;
     }
 
-    public Building(){
+    public House(){
         this(new ArrayList<Floor>());
     }
 
@@ -39,7 +42,7 @@ public class Building {
         return floors.size();
     }
 
-    public int getApartmentsCount(){
+    public int getQuartersCount(){
         int counter = 0;
         for (Floor floor : floors) {
             counter += floor.getSize();
