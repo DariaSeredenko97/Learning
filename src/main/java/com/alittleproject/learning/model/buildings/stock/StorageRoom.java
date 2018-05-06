@@ -1,4 +1,4 @@
-package com.alittleproject.learning.model.buildings.Stock;
+package com.alittleproject.learning.model.buildings.stock;
 
 import com.alittleproject.learning.model.buildings.base.Quarters;
 
